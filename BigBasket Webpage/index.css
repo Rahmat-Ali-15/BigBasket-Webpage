@@ -166,16 +166,6 @@
     border: none;
     border-radius: 50%;
 }
-
-/* .food_container a::before{
-    content: "";
-    position: absolute;
-    height: 2px;
-    bottom: 2px;
-    width: 100%;
-    left: 0%;
-    background-color: red;
-} */
 .basket_offer{
     grid-area: last;
     width: 13vw;
@@ -190,7 +180,6 @@
     padding: 2px 5px;
     gap: 10px;
     background-color:#e9e5e5;
-    /* border: 1px solid red; */
     font-size: 14px;
     border-radius: 10px;
 }
@@ -206,10 +195,254 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid red; */
     border-radius: 10px;
     background-color:#e9e5e5;
 }
 .offer>img{
     height: 25px;
 }
+/* lower_nav end here */
+
+/* Main section start from here. */
+
+
+.menu_container{
+  width: 100%;
+  padding: 65px 195px 20px 195px;
+  display: grid;
+  gap: 25px;
+  align-items: center;
+  grid-template-columns: repeat(6,1fr);
+  text-align: center;
+}
+.menu_container>div>img{
+  height: 50px;
+}
+
+.nonveg{
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e8e8e8;
+}
+.neupass{
+  padding: 1px;
+  border-radius: 10px;
+  background-color: #19102d;
+  border: none;
+}
+.ayurveda{
+  font-weight: bold;
+  color: white;
+  padding: 19px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4c6120;
+}
+.buy_save{
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e8e8e8;
+}
+.deals{
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e8e8e8;
+}
+.store{
+  font-weight: bold;
+  padding: 19px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e8e8e8;
+}
+
+
+/* my samrt basket part start from here */
+
+.my_smart_basket_parent_container{
+  width: 100%;
+  max-height: 100%;
+  padding: 0 195px;
+}
+.content_container{
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.smart_basket_item{
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.basket_content{
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-areas: "item1 item2 item3 item4";
+  gap: 20px;
+  
+}
+
+.item_container_1{
+  padding: 10px;
+  border-radius: 10px;
+  height: 545px;
+  grid-area: item1;
+  background-color: white;
+}
+.item1{
+  height: 235px;
+  border-radius: 10px;
+  border: 1px solid rgb(209, 213, 213);
+}
+.smart_offer{
+  text-align: center;
+  height: 25px;
+  width: 80px;
+  font-size: 14px;
+  padding: 5px 5px;
+  background-color: #466e03;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+.div2>img{
+  width: 180px;
+  border: 1px solid green;
+  height: 185px;
+  display: block;
+  margin: auto;
+}
+.item2{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+p{
+  font-size: 14px;
+  opacity: 0.5;
+}
+span{
+  opacity: 0.8;
+}
+.item3{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+.item3>select{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 5px;
+}
+.strike{
+  display: inline;
+  text-decoration: line-through;
+}
+.item4{
+  margin-top: 40px;
+}
+.item4>select{
+  width: 100%;
+  padding: 8px 0px 8px 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #35690deb;
+  font-weight: 550;
+  font-size: 14px;
+  background-image: linear-gradient(to right, #eff6e7 10%, #e5f5c6 90%);
+}
+.item5{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.icon{
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.icon::after{
+  visibility: hidden;
+  content: "Save For Later";
+  color: white;
+  width: 90px;
+  font-size: 12px;
+  background-color: black;
+  position: absolute;
+  top: 40px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+}
+.icon:hover:after{
+  visibility: visible;
+}
+.icon::before{
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  top: 25px;
+  left: 11px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: transparent  transparent black transparent;
+}
+.icon:hover::before{
+  visibility: visible;
+}
+
+.icon>img{
+  width: 40px;
+  height: 18px;
+  display: block;
+  margin: auto;
+}
+
+.add{
+  border: 1px solid red;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  color: red;
+  cursor: pointer;
+}
+
+.add:hover{
+  color: white;
+  background-image: linear-gradient(rgb(184, 16, 16),rgb(226, 38, 38));
+}
+
+.item_container_2{
+  height: 545px;
+  padding: 10px;
+  grid-area: item2;
+  background-color: white;
+}
+
+.item_container_3{
+  height: 545px;
+  padding: 10px;
+  grid-area: item3;
+  background-color: white;
+}
+.item_container_4{
+  height: 545px;
+  padding: 10px;
+  grid-area: item4;
+  background-color: white;
+}
+
+/* my smart basket part end here */
+
+/* main section end here. */
