@@ -6,13 +6,15 @@
 }
 .header {
   width: 100vw;
-  height: 126px;
+  height: 126px
 }
 
 .st_line {
   width: 100%;
   height: 4px;
   background-color: rgb(9, 143, 9);
+  position: fixed;
+  top: 0;
 }
 
 
@@ -75,6 +77,7 @@
   border-radius: 5px;
   border: none;
   background-color: rgb(238, 238, 238);
+  cursor: pointer;
 }
 .location > img {
   height: 25px;
@@ -106,6 +109,7 @@
   border: none;
   border-radius: 5px;
   background-color: rgb(250, 230, 230);
+  cursor: pointer;
 }
 .shoppin_cart_icon > img {
   height: 30px;
@@ -135,13 +139,17 @@
     border: none;
     border-radius: 6px;
     Background-color: rgb(94, 148, 0);
+    cursor: pointer;
 }
 .category>select{
+    width: 95%;
+    padding: 0px;
     font-size: 17px;
     border: none;
     outline: none;
     color: white;
     background-color: transparent;
+    cursor: pointer;
 }
 .food_container{
     grid-area: middle;
@@ -165,6 +173,7 @@
     height: 30px;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
 }
 .basket_offer{
     grid-area: last;
@@ -182,6 +191,7 @@
     background-color:#e9e5e5;
     font-size: 14px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .smart_cart>img{
     height: 30px;
@@ -197,6 +207,7 @@
     justify-content: space-between;
     border-radius: 10px;
     background-color:#e9e5e5;
+    cursor: pointer;
 }
 .offer>img{
     height: 25px;
@@ -205,10 +216,10 @@
 
 /* Main section start from here. */
 
-
+/* menu part start from here */
 .menu_container{
   width: 100%;
-  padding: 65px 195px 20px 195px;
+  padding: 65px 195px 32px 195px;
   display: grid;
   gap: 25px;
   align-items: center;
@@ -225,12 +236,14 @@
   border-radius: 10px;
   border: none;
   background-color: #e8e8e8;
+  cursor: pointer;
 }
 .neupass{
   padding: 1px;
   border-radius: 10px;
   background-color: #19102d;
   border: none;
+  cursor: pointer;
 }
 .ayurveda{
   font-weight: bold;
@@ -239,6 +252,7 @@
   border-radius: 10px;
   border: none;
   background-color: #4c6120;
+  cursor: pointer;
 }
 .buy_save{
   font-weight: bold;
@@ -246,6 +260,7 @@
   border-radius: 10px;
   border: none;
   background-color: #e8e8e8;
+  cursor: pointer;
 }
 .deals{
   font-weight: bold;
@@ -253,6 +268,7 @@
   border-radius: 10px;
   border: none;
   background-color: #e8e8e8;
+  cursor: pointer;
 }
 .store{
   font-weight: bold;
@@ -260,8 +276,10 @@
   border-radius: 10px;
   border: none;
   background-color: #e8e8e8;
+  cursor: pointer;
 }
 
+/* menu part end here */
 
 /* my samrt basket part start from here */
 
@@ -269,11 +287,65 @@
   width: 100%;
   max-height: 100%;
   padding: 0 195px;
+  margin-bottom: 32px;
 }
 .content_container{
   background-color: #f1f1f1;
   padding: 20px;
 }
+.up_container{
+  display: flex;
+  justify-content: space-between;
+}
+.view_part{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.view_part>a{
+  opacity: 0.6;
+  color: black;
+}
+.view_part>a:hover{
+  opacity: 1;
+}
+.arrow{
+  display: flex;
+  gap: 10px;
+}
+.left_arrow{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #d7d6d6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.left_arrow:hover{
+  border: 1px solid black;
+}
+.left_arrow>img{
+  height: 15px;
+}
+.right_arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+}
+.right_arrow:hover{
+  border: 1px solid black;
+}
+.right_arrow>img{
+  height: 15px;
+  transform: rotate(180deg);
+}
+
 .smart_basket_item{
   font-size: 18px;
   font-weight: bold;
@@ -292,7 +364,6 @@
 .item_container_1{
   padding: 10px;
   border-radius: 10px;
-  height: 545px;
   grid-area: item1;
   background-color: white;
 }
@@ -300,6 +371,7 @@
   height: 235px;
   border-radius: 10px;
   border: 1px solid rgb(209, 213, 213);
+  cursor: pointer;
 }
 .smart_offer{
   text-align: center;
@@ -342,6 +414,7 @@ span{
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
   padding: 5px;
+  cursor: pointer;
 }
 .strike{
   display: inline;
@@ -358,6 +431,7 @@ span{
   font-weight: 550;
   font-size: 14px;
   background-image: linear-gradient(to right, #eff6e7 10%, #e5f5c6 90%);
+  cursor: pointer;
 }
 .item5{
   display: flex;
@@ -365,13 +439,40 @@ span{
   margin-top: 10px;
 }
 .icon{
+  width: 40px;
   height: 35px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   cursor: pointer;
   position: relative;
 }
+.icon>img{
+  height: 18px;
+}
+
+/* tooltip arrow start */
+
+.icon::before{
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  top: 25px;
+  left: 11px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: transparent  transparent black transparent;
+}
+.icon:hover::before{
+  visibility: visible;
+}
+
+/* tooltip arrow end here */
+
+/* tooltip part start from here */
+
 .icon::after{
   visibility: hidden;
   content: "Save For Later";
@@ -388,26 +489,8 @@ span{
 .icon:hover:after{
   visibility: visible;
 }
-.icon::before{
-  content: "";
-  visibility: hidden;
-  position: absolute;
-  top: 25px;
-  left: 11px;
-  border-style: solid;
-  border-width: 8px;
-  border-color: transparent  transparent black transparent;
-}
-.icon:hover::before{
-  visibility: visible;
-}
+/* tooptip part end here */
 
-.icon>img{
-  width: 40px;
-  height: 18px;
-  display: block;
-  margin: auto;
-}
 
 .add{
   border: 1px solid red;
@@ -424,25 +507,54 @@ span{
 }
 
 .item_container_2{
-  height: 545px;
   padding: 10px;
+  border-radius: 10px;
   grid-area: item2;
   background-color: white;
 }
 
 .item_container_3{
-  height: 545px;
   padding: 10px;
+  border-radius: 10px;
   grid-area: item3;
   background-color: white;
 }
 .item_container_4{
-  height: 545px;
   padding: 10px;
+  border-radius: 10px;
   grid-area: item4;
   background-color: white;
 }
 
 /* my smart basket part end here */
+
+/* Best Seller part start from here. */
+.rating{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.num_star{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  background-color: #e7f6d4;
+}
+.num_star>p{
+  opacity: 1;
+  color: #3a6703;
+}
+.rating_star{
+  height: 12px;
+  background-color: #506f19;
+  border-radius: 50%;
+}
+.rating>p{
+  font-size: 12px;
+}
+
+/* Best Seller part end here. */
 
 /* main section end here. */
