@@ -557,4 +557,74 @@ span {
 
 /* Best Seller part end here. */
 
+/* Top offer part start from here */
+
+.top_offer_container{
+  width: 100%;
+  border: 1px solid red;
+  padding: 10px 195px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offer_heading{
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.offer_content{
+  width: 100%;
+  border: 1px solid pink;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-areas: "item1 item2 item3 item4";
+  column-gap: 20px;
+}
+
+.offer_item1{
+  height: 200px;
+  grid-area: item1;
+  position: relative;
+  box-shadow: 10px 10px 100px 100px #f4f4f4;
+  cursor: pointer;
+  background-color: #fff;
+}
+.offer_item1:hover{
+  background: repeating-radial-gradient(#e7e5e5,#e7e5e5)  ;
+  box-shadow: -1px 1px 1px 1px #e7e5e5, 1px 1px 1px 1px #e7e5e5, -1px -1px 1px 1px #e7e5e5, 1px -1px 1px 1px #e7e5e5;
+}
+.up_part{
+  height: 130px;
+  background-color: #dd2026;
+  z-index: 2;
+}
+.lo_part{
+  height: 100px;
+  background-color: white;
+  position: relative;
+  bottom: 32px;
+  left: 1.5%;
+  z-index: 5;
+  width: 98.5%;
+  
+}
+.offer_item2{
+  grid-area: item2;
+  border: 1px solid black;
+}
+.offer_item3{
+  grid-area: item3;
+  border: 1px solid black;
+}
+.offer_item4{
+  grid-area: item4;
+  border: 1px solid black;
+}
+
+
+/* Top offer part end here */
+
 /* main section end here. */
