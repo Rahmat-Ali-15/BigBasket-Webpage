@@ -613,7 +613,7 @@ span {
 }
 .offer_item2{
   grid-area: item2;
-  border: 1px solid black;
+  
 }
 .offer_item3{
   grid-area: item3;
