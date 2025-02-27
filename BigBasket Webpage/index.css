@@ -559,72 +559,197 @@ span {
 
 /* Top offer part start from here */
 
-.top_offer_container{
+.top_offer_container {
   width: 100%;
-  border: 1px solid red;
   padding: 10px 195px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.offer_heading{
+.offer_heading {
   font-size: 24px;
   font-weight: bold;
-  border: 1px solid black;
 }
 
-.offer_content{
+.offer_content {
   width: 100%;
-  border: 1px solid pink;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "item1 item2 item3 item4";
   column-gap: 20px;
 }
 
-.offer_item1{
+.offer_item1 {
   height: 200px;
   grid-area: item1;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  box-shadow: 10px 10px 100px 100px #f4f4f4;
+  box-shadow: 0px 2px 2px 2px #f1f1f1, 0px -2px 2px 2px #f1f1f1;
+  border-radius: 10px;
   cursor: pointer;
-  background-color: #fff;
 }
-.offer_item1:hover{
-  background: repeating-radial-gradient(#e7e5e5,#e7e5e5)  ;
-  box-shadow: -1px 1px 1px 1px #e7e5e5, 1px 1px 1px 1px #e7e5e5, -1px -1px 1px 1px #e7e5e5, 1px -1px 1px 1px #e7e5e5;
+.offer_item1:hover {
+  box-shadow: 0px 10px 10px 5px rgba(97, 90, 90, 0.2),
+    0px -2px 10px 0 rgba(97, 90, 90, 0.2);
 }
-.up_part{
-  height: 130px;
+.up_part {
+  height: 60%;
   background-color: #dd2026;
-  z-index: 2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
 }
-.lo_part{
-  height: 100px;
-  background-color: white;
-  position: relative;
-  bottom: 32px;
-  left: 1.5%;
-  z-index: 5;
+.up_part > h1 {
+  height: 75%;
+  padding-bottom: 1px;
+  display: flex;
+  align-items: end;
+  padding-left: 30px;
+  color: #fef9fa;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+.lo_part {
   width: 98.5%;
-  
+  height: 40%;
+  border: none;
+  position: absolute;
+  top: 45%;
+  left: 1.5%;
+  background-color: white;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.offer_item2{
+.lo_part > h1 {
+  display: flex;
+  height: 100%;
+  padding-left: 25px;
+  padding-top: 1px;
+  font-size: 21px;
+  color: #4a4647;
+}
+.lo_part > a {
+  padding-left: 25px;
+  font-size: 13px;
+  color: #848283;
+  position: relative;
+  text-decoration: none;
+}
+.lo_part > a::after {
+  content: "Top Offers";
+  visibility: hidden;
+  width: 60%;
+  padding: 5px;
+  position: absolute;
+  top: 15px;
+  left: 70px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+.lo_part > a:hover:after {
+  color: black;
+  visibility: visible;
+}
+.offer_item2 {
   grid-area: item2;
-  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 2px 2px 2px #f1f1f1, -2px -2px 2px #f1f1f1;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.offer_item3{
+.offer_item2:hover {
+  box-shadow: 0px 10px 10px 5px rgba(97, 90, 90, 0.2),
+    0px -2px 10px 0 rgba(97, 90, 90, 0.2);
+}
+.offer_item3 {
   grid-area: item3;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 2px 2px 2px #f1f1f1, -2px -2px 2px #f1f1f1;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.offer_item4{
+.offer_item3:hover {
+  box-shadow: 0px 10px 10px 5px rgba(97, 90, 90, 0.2),
+    0px -2px 10px 0 rgba(97, 90, 90, 0.2);
+}
+.offer_item4 {
   grid-area: item4;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 2px 2px 2px #f1f1f1, -2px -2px 2px #f1f1f1;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
+.offer_item4:hover {
+  box-shadow: 0px 10px 10px 5px rgba(97, 90, 90, 0.2),
+    0px -2px 10px 0 rgba(97, 90, 90, 0.2);
+}
 
 /* Top offer part end here */
+
+/* Fruits and Vegitable start from here. */
+
+.fruits_vegitables_container {
+  padding: 10px 195px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid red;
+}
+.fv_heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.fruits_vegitables_content {
+  border: 1px solid gray;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "fv_item1 fv_item2 fv_item3 fv_item4";
+  column-gap: 20px;
+}
+.fv_item1{
+  grid-area: fv_item1;
+  border: 1px solid red;
+  height: 200px;
+}
+.fv_up_part{
+  height: 70%;
+  width: 100%;
+}
+.fv_up_part>img{
+  height: 100%;
+  width: 100%;
+}
+
+.fv_lo_part{
+  height: 30%;
+}
+
+.fv_item2{
+  grid-area: fv_item2;
+  border: 1px solid red;
+}
+.fv_item3{
+  grid-area: fv_item3;
+  border: 1px solid red;
+}
+.fv_item4{
+  grid-area: fv_item4;
+  border: 1px solid red;
+}
+/* Fruits and Vegitables part end here. */
 
 /* main section end here. */
