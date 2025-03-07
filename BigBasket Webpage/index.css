@@ -10,11 +10,27 @@
   .header {
     display: none;
   }
+  .nav_up{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .location_mobile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   .mobile_header {
     display: block !important;
     width: 100vw !important;
     height: 100px !important;
     border: 1px solid red !important;
+  }
+  .logo_for_mobile>img{
+    height: 40px;
+  }
+  .location_mobile>img{
+    height: 25px;
   }
 }
 
@@ -24,7 +40,7 @@
   display: none;
 }
 
-.header_12 {
+.header {
   width: 100vw;
   height: 126px;
   position: fixed;
@@ -40,6 +56,17 @@
   background-color: rgb(9, 143, 9);
   position: fixed;
   top: 0;
+  animation: expand 1.5s ease-in-out;
+}
+@keyframes expand{
+  0%{
+    width: 0;
+    left: 50%;
+  }
+  100%{
+    width: 100%;
+    left: 0;
+  }
 }
 .st_line::before {
   content: "";
