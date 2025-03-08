@@ -1,5 +1,5 @@
 * {
-  position: 0;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
@@ -10,30 +10,317 @@
   .header {
     display: none;
   }
-  .nav_up{
+  .mobile_header {
+    display: flex !important;
+    flex-direction: column;
+    width: 100vw;
+    height: 110px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 2px 10px 2px #eaeaea;
+    gap: 10px;
+  }
+  .mob_nav_up {
+    padding: 20px;
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: space-between;
+    height: 50%;
   }
-  .location_mobile{
+  .logo_for_mobile > img {
+    height: 40px;
+  }
+  .location_mobile > img {
+    height: 20px;
+  }
+  .location_mobile {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .mobile_header {
-    display: block !important;
-    width: 100vw !important;
-    height: 100px !important;
-    border: 1px solid red !important;
+  .hamburger {
+    border: 1px solid rgb(37, 33, 33);
+    border-radius: 5px;
+    height: 35px;
+    width: 40px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-image: radial-gradient(#474749, #232020);
   }
-  .logo_for_mobile>img{
-    height: 40px;
+  .hamburger > span {
+    width: 30px;
+    height: 3px;
+    border: none;
+    border-radius: 10px;
+    background-image: radial-gradient(#ece3e1, #968c8c);
   }
-  .location_mobile>img{
+  .mob_nav_lo {
+    height: 50%;
+    padding: 0 20px 10px 20px;
+  }
+  .mob_search_box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .mob_search_box:focus-within {
+    border-color: rgb(27, 220, 27);
+  }
+  .mob_search_box > img {
     height: 25px;
   }
-}
+  .mob_search_box > input {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+  }
+  .menu_container {
+    flex-wrap: wrap !important;
+    padding: 0 !important;
+    margin-top: 120px;
+    grid-template-columns: none !important;
+    display: grid !important;
+    grid-template-areas:
+      "neupass ayurveda"
+      "deals store";
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+  .nonveg {
+    display: none;
+  }
+  .neupass {
+    grid-area: neupass;
+  }
+  .ayurveda {
+    grid-area: ayurveda;
+  }
+  .buy_save {
+    display: none;
+  }
+  .deals {
+    grid-area: deals;
+  }
+  .store {
+    grid-area: store;
+  }
+  .my_smart_basket_parent_container {
+    width: 100%;
+    padding: 10px !important;
+  }
+  .basket_content {
+    width: 100%;
+    padding: 10px !important;
+    display: grid;
+    grid-template-columns: none !important;
+    grid-template-rows: repeat(4, 1fr) !important;
+    grid-template-areas:
+      "item1" 
+      "item2"
+      "item3"
+      "item4" !important;
+  }
+  .div2 > img {
+    width: 250px !important;
+    height: 185px;
+  }
+  .top_offer_container { 
+    padding: 10px !important;
+  }
+  .offer_content {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) !important;
+    grid-template-areas: "item1 item2"
+                         "item3 item4" !important;
+    gap: 15px !important;
+  }
+  .fruits_vegitables_container {
+    padding: 10px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .fruits_vegitables_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "fv_item1 fv_item2" 
+                         "fv_item3 fv_item4" !important;
+  }
+  .daily_staples_container {
+    padding: 10px !important;
+  }
+  .staple_heading {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .staples_item_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "ds_item1 ds_item2"
+                         "ds_item4 ds_item3"
+                         "ds_item5 ds_item6" !important;
+  }
+  .beverage_container {
+    padding: 10px !important;
+  }
+  .bev_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "bev_item1 bev_item2"
+                         "bev_item3 bev_item4" 
+                         "bev_item5 bev_item6" !important;
+  }
+  .snacks_container {
+    padding: 10px !important;
+  }
+  .snack_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "snack_item1 snack_item2" 
+                         "snack_item3 snack_item4" !important;
+    gap: 20px !important;
+  }
+  .snack_name {
+    font-size: 12px !important;
+  }
+  .snack_offer > h1 {
+    font-size: 16px !important;
+  }
 
+  .cleaning_container {
+    padding: 10px !important;
+  }
+  .cleaning_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "cleaning_item1 cleaning_item2" 
+                         "cleaning_item3 cleaning_item4" !important;
+    gap: 20px !important;
+  }
+  .cleaning_name {
+    font-size: 12px !important;
+  }
+  .cleaning_offer > h1 {
+    font-size: 16px !important;
+  }
+
+  .beauty_container {
+    padding: 10px !important;
+  }
+  .beauty_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "beauty_item1 beauty_item2" 
+                         "beauty_item3 beauty_item4" 
+                         "beauty_item5 beauty_item6" !important;
+  }
+
+  .kitchen_container {
+    padding: 10px !important;
+  }
+  .kitchen_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "kitchen_item1 kitchen_item2" 
+                         "kitchen_item3 kitchen_item4" 
+                         "kitchen_item5 kitchen_item6" !important;
+  }
+
+  .p_container {
+    padding: 20px !important;
+  }
+
+  footer {
+    display: none !important;
+    background-color: white !important   ;
+  }
+  .mobile_footer{
+    width: 100% !important;
+    padding: 0 !important;
+    height: 240px;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .mob_foot_heading{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #323031;
+  }
+
+  .mobile_play_apple_store{
+    height: 125px !important;
+    width: 100%;
+    padding: 15px;
+    background-color: #61586385;
+  }
+  .mobile_play_apple_store>p{ 
+    width: 100% !important;
+    height: 30px;
+    font-size: 16px;
+    opacity: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile_play_apple_store_icon{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+  .mobile_playstore_icon{
+    height: 73px;
+  }
+  .mobile_applestore_icon{
+    height: 50px;
+  }
+
+  .mob_foot_img_container{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0 15px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -1px 2px 1px #faf7f7;
+    z-index: 1;
+  }
+  figure>a>img{
+    height: 30px;
+  }
+  figcaption{
+    color: black;
+    text-align: center;
+    font-size: 13px;
+  }
+  .catgo{
+    padding-left: 16px;
+  }
+}
 /* 480px Responsive part end here. */
 
 .mobile_header {
@@ -56,14 +343,15 @@
   background-color: rgb(9, 143, 9);
   position: fixed;
   top: 0;
+  z-index: 1;
   animation: expand 1.5s ease-in-out;
 }
-@keyframes expand{
-  0%{
+@keyframes expand {
+  0% {
     width: 0;
     left: 50%;
   }
-  100%{
+  100% {
     width: 100%;
     left: 0;
   }
@@ -716,6 +1004,7 @@ span {
 }
 .offer_item2 {
   grid-area: item2;
+  height: 200px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -729,6 +1018,7 @@ span {
 }
 .offer_item3 {
   grid-area: item3;
+  height: 200px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -742,6 +1032,7 @@ span {
 }
 .offer_item4 {
   grid-area: item4;
+  height: 200px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -825,6 +1116,7 @@ span {
 }
 .fv_item2 {
   grid-area: fv_item2;
+  max-height: 100%;
   box-shadow: 2px 2px 2px #f1f1f1, -2px -2px 2px #f1f1f1;
   border-radius: 10px;
   cursor: pointer;
@@ -835,6 +1127,7 @@ span {
 }
 .fv_item3 {
   grid-area: fv_item3;
+  max-height: 100%;
   box-shadow: 2px 2px 2px #f1f1f1, -2px -2px 2px #f1f1f1;
   border-radius: 10px;
   cursor: pointer;
@@ -843,15 +1136,16 @@ span {
   box-shadow: 0px 10px 10px 5px rgba(97, 90, 90, 0.2),
     0px -2px 10px 0 rgba(97, 90, 90, 0.2);
 }
-.fv_item4:hover {
-  box-shadow: 0px 10px 10px 5px rgba(97, 90, 90, 0.2),
-    0px -2px 10px 0 rgba(97, 90, 90, 0.2);
-}
 .fv_item4 {
   grid-area: fv_item4;
+  max-height: 100%;
   box-shadow: 2px 2px 2px #f1f1f1, -2px -2px 2px #f1f1f1;
   border-radius: 10px;
   cursor: pointer;
+}
+.fv_item4:hover {
+  box-shadow: 0px 10px 10px 5px rgba(97, 90, 90, 0.2),
+    0px -2px 10px 0 rgba(97, 90, 90, 0.2);
 }
 /* Fruits and Vegitables part end here. */
 
@@ -1231,7 +1525,7 @@ span {
   display: flex;
   align-items: end;
 }
-.snack_cleaning_namename {
+.cleaning_name {
   font-size: 16px;
   opacity: 0.7;
   padding-bottom: 2px;
@@ -1647,5 +1941,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mobile_footer{
+  display: none;
 }
 /* footer part end here. */
