@@ -41,7 +41,7 @@
     gap: 10px;
   }
   .hamburger {
-    border: 1px solid rgb(37, 33, 33);
+    border: none;
     border-radius: 5px;
     height: 35px;
     width: 40px;
@@ -51,14 +51,14 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    background-image: radial-gradient(#474749, #232020);
+    background-image: radial-gradient(rgb(103, 100, 100), rgb(100, 97, 97));
   }
   .hamburger > span {
     width: 30px;
-    height: 3px;
+    height: 4px;
     border: none;
     border-radius: 10px;
-    background-image: radial-gradient(#ece3e1, #968c8c);
+    background-image: radial-gradient(rgb(220, 213, 213), rgb(238, 231, 231));
   }
   .mob_nav_lo {
     height: 50%;
@@ -121,6 +121,9 @@
     width: 100%;
     padding: 10px !important;
   }
+  .content_container{
+    padding: 20px 0 !important;
+  }
   .basket_content {
     width: 100%;
     padding: 10px !important;
@@ -132,6 +135,13 @@
       "item2"
       "item3"
       "item4" !important;
+  }
+  .smart_basket_item {
+    padding-left: 10px;
+  }
+  .view_part{
+    padding-bottom: 15px;
+    padding-right: 10px;
   }
   .div2 > img {
     width: 250px !important;
@@ -149,6 +159,14 @@
                          "item3 item4" !important;
     gap: 15px !important;
   }
+  .up_part > h1{
+    font-size: 18px !important;
+    padding-left: 18px !important;
+  }
+  .lo_part > h1 {
+    font-size: 18px !important;
+    padding-left: 15px !important;
+  }
   .fruits_vegitables_container {
     padding: 10px !important;
     display: flex;
@@ -160,6 +178,12 @@
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-areas: "fv_item1 fv_item2" 
                          "fv_item3 fv_item4" !important;
+  }
+  .f_veg {
+    font-size: 13px !important;
+}
+  .fresh_offer > h1 {
+    font-size: 16px !important;
   }
   .daily_staples_container {
     padding: 10px !important;
@@ -201,7 +225,6 @@
   .snack_offer > h1 {
     font-size: 16px !important;
   }
-
   .cleaning_container {
     padding: 10px !important;
   }
@@ -218,7 +241,6 @@
   .cleaning_offer > h1 {
     font-size: 16px !important;
   }
-
   .beauty_container {
     padding: 10px !important;
   }
@@ -229,7 +251,6 @@
                          "beauty_item3 beauty_item4" 
                          "beauty_item5 beauty_item6" !important;
   }
-
   .kitchen_container {
     padding: 10px !important;
   }
@@ -240,11 +261,9 @@
                          "kitchen_item3 kitchen_item4" 
                          "kitchen_item5 kitchen_item6" !important;
   }
-
   .p_container {
     padding: 20px !important;
   }
-
   footer {
     display: none !important;
     background-color: white !important   ;
@@ -265,7 +284,6 @@
     background-color: #f0f0f0;
     color: #323031;
   }
-
   .mobile_play_apple_store{
     height: 125px !important;
     width: 100%;
@@ -295,7 +313,6 @@
   .mobile_applestore_icon{
     height: 50px;
   }
-
   .mob_foot_img_container{
     width: 100%;
     height: 60px;
@@ -325,20 +342,472 @@
 }
 /* 480px Responsive part end here. */
 
-.mobile_header {
-  display: none;
+
+/* 481px to 768px Responsive part start from here. */
+
+
+@media (min-width: 481px) and (max-width: 768px){
+  .header{
+    display: none !important;
+  }
+  .mobile_header {
+    display: flex !important;
+    flex-direction: column;
+    width: 100vw;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 2px 10px 2px #eaeaea;
+    gap: 10px;
+  }
+  .mob_nav_up {
+    padding: 40px 20px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+  }
+  .logo_for_mobile > img {
+    height: 40px;
+  }
+  .location_mobile > img {
+    height: 20px;
+  }
+  .location_mobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .hamburger {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 45px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-image: radial-gradient(rgb(103, 100, 100), rgb(100, 97, 97));
+  }
+  .hamburger > span {
+    width: 35px;
+    height: 5px;
+    border: none;
+    border-radius: 10px;
+    background-image: radial-gradient(rgb(226, 220, 220), rgb(234, 222, 222));
+  }
+  .mob_nav_lo {
+    height: 50%;
+    padding: 0 20px 10px 20px;
+  }
+  .mob_search_box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .mob_search_box:focus-within {
+    border-color: rgb(27, 220, 27);
+  }
+  .mob_search_box > img {
+    height: 25px;
+  }
+  .mob_search_box > input {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+  }
+  .menu_container {
+    flex-wrap: wrap !important;
+    padding: 0 !important;
+    margin-top: 120px;
+    grid-template-columns: none !important;
+    display: grid !important;
+    grid-template-areas:
+      "nonveg neupass ayurveda"
+      "buy_save deals store";
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+  .nonveg {
+    padding: 20px 0px !important;
+  }
+  .my_smart_basket_parent_container {
+    width: 100%;
+    padding: 10px !important;
+  }
+  .basket_content {
+    width: 100%;
+    padding: 10px !important;
+    display: grid;
+    grid-template-columns: none !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    grid-template-areas:
+      "item1 item2" 
+      "item3 item4" !important;
+  }
+  .div2 > img {
+    width: 250px !important;
+    height: 185px;
+  }
+  .top_offer_container { 
+    padding: 10px !important;
+  }
+  .offer_content {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) !important;
+    grid-template-areas: "item1 item2"
+                         "item3 item4" !important;
+    gap: 15px !important;
+  }
+  .fruits_vegitables_container {
+    padding: 10px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .fruits_vegitables_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "fv_item1 fv_item2" 
+                         "fv_item3 fv_item4" !important;
+  }
+  .daily_staples_container {
+    padding: 10px !important;
+  }
+  .staple_heading {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .staples_item_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-areas: "ds_item1 ds_item2 ds_item4"
+                         "ds_item3 ds_item5 ds_item6" !important;
+  }
+  .beverage_container {
+    padding: 10px !important;
+  }
+  .bev_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-areas: "bev_item1 bev_item2 bev_item3"
+                         "bev_item4 bev_item5 bev_item6" !important;
+  }
+  .snacks_container {
+    padding: 10px !important;
+  }
+  .snack_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "snack_item1 snack_item2" 
+                         "snack_item3 snack_item4" !important;
+    gap: 20px !important;
+  }
+  .snack_name {
+    font-size: 12px !important;
+  }
+  .snack_offer > h1 {
+    font-size: 16px !important;
+  }
+  .cleaning_container {
+    padding: 10px !important;
+  }
+  .cleaning_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: "cleaning_item1 cleaning_item2" 
+                         "cleaning_item3 cleaning_item4" !important;
+    gap: 20px !important;
+  }
+  .cleaning_name {
+    font-size: 12px !important;
+  }
+  .cleaning_offer > h1 {
+    font-size: 16px !important;
+  }
+  .beauty_container {
+    padding: 10px !important;
+  }
+  .beauty_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-areas: "beauty_item1 beauty_item2 beauty_item3" 
+                         "beauty_item4 beauty_item5 beauty_item6" !important;
+  }
+  .kitchen_container {
+    padding: 10px !important;
+  }
+  .kitchen_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-areas: "kitchen_item1 kitchen_item2 kitchen_item3" 
+                         "kitchen_item4 kitchen_item5 kitchen_item6" !important;
+  }
+  .p_container {
+    padding: 20px !important;
+  }
+  footer {
+    display: none !important;
+    background-color: white !important   ;
+  }
+  .mobile_footer{
+    width: 100% !important;
+    padding: 0 !important;
+    height: 240px;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .mob_foot_heading{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #323031;
+  }
+  .mobile_play_apple_store{
+    height: 125px !important;
+    width: 100%;
+    padding: 15px;
+    background-color: #61586385;
+  }
+  .mobile_play_apple_store>p{ 
+    width: 100% !important;
+    height: 30px;
+    font-size: 16px;
+    opacity: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile_play_apple_store_icon{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+  .mobile_playstore_icon{
+    height: 73px;
+  }
+  .mobile_applestore_icon{
+    height: 50px;
+  }
+  .mob_foot_img_container{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0 15px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -1px 2px 1px #faf7f7;
+    z-index: 1;
+  }
+  figure>a>img{
+    height: 30px;
+    cursor: pointer;
+  }
+  figcaption{
+    color: black;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .catgo{
+    padding-left: 16px;
+  }
+
 }
+
+/* 481px to 768px Responsive part start from here. */
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .header{
+    width: 100vw;
+    padding: 10PX 0 !important;
+  }
+  .up_nav {
+    padding: 8px 10px !important;
+    display: grid;
+    justify-content: space-between !important;
+    gap: 0px !important;
+  }
+  .search_bar {
+    width: 40vw !important;
+  }
+  .search_icon > img {
+    width: 3vw !important;
+  }
+  .search_bar > input {
+    width: 30vw !important;
+  }
+  .location {
+    width: 15vw !important;
+  }
+  .login_signup {
+    width: 15vw !important;
+  }
+  .shoppin_cart_icon {
+    width: 5vw !important;
+  }
+  .lower_nav {
+    padding: 10px !important; 
+  }
+  .category {
+    width: 18vw !important;
+    padding: 5px !important;
+  }
+  .category > select {
+    padding: 5px 0 !important;
+  }
+  .food_container {
+    width: 55vw !important;
+    gap: 35px !important;
+  }
+  .basket_offer {
+    width: 20vw !important; 
+    gap: 10px;
+  }
+  .smart_cart {
+    width: 10vw !important;
+    padding: 2px 5px;
+  }
+  .offer {
+    width: 10vw !important;
+    padding: 6px 7px !important;
+  }
+  .menu_container {
+    width: 100% !important;
+    margin-top: 160px!important;
+    padding: 0px 10px !important;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+  .nonveg {
+    display: none !important;
+  }
+  .my_smart_basket_parent_container {
+    padding: 10px !important;
+  }
+  .top_offer_container {
+    padding: 10px !important;
+  }
+  .offer_content {
+    width: 100% !important;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) !important;
+    grid-template-areas: "item1 item2 item3 item4" !important;
+    gap: 15px !important;
+  }
+  .fruits_vegitables_container {
+    padding: 10px !important;
+  }
+  .fruits_vegitables_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-areas: "fv_item1 fv_item2 fv_item3 fv_item4" !important;
+  }
+  .daily_staples_container {
+    padding: 10px !important; 
+  }
+  .staples_item_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-areas: "ds_item1 ds_item2 ds_item4 ds_item3 ds_item5 ds_item6" !important;
+  }
+  .beverage_container {
+    padding: 10px !important;
+  }
+  .bev_content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-areas: "bev_item1 bev_item2 bev_item3 bev_item4 bev_item5 bev_item6" !important;
+  }
+  .snacks_container {
+    padding: 10px !important;
+  }
+  .snack_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-areas: "snack_item1 snack_item2 snack_item3 snack_item4" !important;
+    gap: 20px !important;
+  }
+
+  .cleaning_container {
+    padding: 10px !important;
+  }
+  .cleaning_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-areas: "cleaning_item1 cleaning_item2 cleaning_item3 cleaning_item4" !important;
+    gap: 20px !important;
+  }
+  .beauty_container {
+    padding: 10px !important;
+  }
+  .beauty_content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-areas: "beauty_item1 beauty_item2 beauty_item3 beauty_item4 beauty_item5 beauty_item6" !important;
+  }
+  .kitchen_container {
+    padding: 10px !important;
+  }
+  .kitchen_content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-areas: "kitchen_item1 kitchen_item2 kitchen_item3 kitchen_item4 kitchen_item5 kitchen_item6" !important;
+  }
+  .p_container {
+    padding: 20px !important;
+  }
+  footer {
+    padding: 60px 100px 20px 100px !important;
+  }
+  .footer_up {
+    gap: 100px !important;
+  }
+  .footer_lo {
+    padding-right: 0px !important;
+  }
+}
+  
+/* 768px to 1024px responsive part end here. */
+
+
+/* header part start from here. */
 
 .header {
   width: 100vw;
-  height: 126px;
+  height: 115px;
   position: fixed;
   top: 0;
   background: #fff;
   z-index: 1;
   box-shadow: 0 2px 10px 2px #eaeaea;
 }
-
+.mobile_header {
+  display: none;
+}
 .st_line {
   width: 100%;
   height: 4px;
@@ -503,16 +972,31 @@
   justify-content: center;
   align-items: center;
   gap: 55px;
-  position: relative;
 }
 .food_container > a {
   text-decoration: none;
   color: black;
   font-weight: 100;
+  position: relative;
 }
 .food_container > a:hover {
   color: rgb(204, 0, 0);
 }
+.food_container a::before{
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -1px;
+  background-image: linear-gradient(white,red);
+  height: 7px;
+  width: 0%;
+  transition: width 0.5s linear;
+  opacity: 0.2;
+}
+.food_container a:hover::before{
+  width: 100%;
+}
+
 .food_container > img {
   height: 30px;
   border: none;
@@ -557,6 +1041,9 @@
   height: 25px;
 }
 /* lower_nav end here */
+
+/* header part end here. */
+
 
 /* Main section start from here. */
 
