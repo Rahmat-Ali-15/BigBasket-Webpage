@@ -311,11 +311,13 @@
   }
   figure>a>img{
     height: 30px;
+    cursor: pointer;
   }
   figcaption{
     color: black;
     text-align: center;
     font-size: 13px;
+    cursor: pointer;
   }
   .catgo{
     padding-left: 16px;
