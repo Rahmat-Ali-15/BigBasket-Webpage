@@ -121,7 +121,7 @@
     width: 100%;
     padding: 10px !important;
   }
-  .content_container{
+  .content_container {
     padding: 20px 0 !important;
   }
   .basket_content {
@@ -131,7 +131,7 @@
     grid-template-columns: none !important;
     grid-template-rows: repeat(4, 1fr) !important;
     grid-template-areas:
-      "item1" 
+      "item1"
       "item2"
       "item3"
       "item4" !important;
@@ -139,7 +139,7 @@
   .smart_basket_item {
     padding-left: 10px;
   }
-  .view_part{
+  .view_part {
     padding-bottom: 15px;
     padding-right: 10px;
   }
@@ -147,19 +147,20 @@
     width: 250px !important;
     height: 185px;
   }
-  .top_offer_container { 
+  .top_offer_container {
     padding: 10px !important;
   }
   .offer_content {
     width: 100%;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(2,1fr) !important;
-    grid-template-areas: "item1 item2"
-                         "item3 item4" !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4" !important;
     gap: 15px !important;
   }
-  .up_part > h1{
+  .up_part > h1 {
     font-size: 18px !important;
     padding-left: 18px !important;
   }
@@ -176,12 +177,13 @@
   .fruits_vegitables_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "fv_item1 fv_item2" 
-                         "fv_item3 fv_item4" !important;
+    grid-template-areas:
+      "fv_item1 fv_item2"
+      "fv_item3 fv_item4" !important;
   }
   .f_veg {
     font-size: 13px !important;
-}
+  }
   .fresh_offer > h1 {
     font-size: 16px !important;
   }
@@ -195,9 +197,10 @@
   .staples_item_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "ds_item1 ds_item2"
-                         "ds_item4 ds_item3"
-                         "ds_item5 ds_item6" !important;
+    grid-template-areas:
+      "ds_item1 ds_item2"
+      "ds_item4 ds_item3"
+      "ds_item5 ds_item6" !important;
   }
   .beverage_container {
     padding: 10px !important;
@@ -205,9 +208,10 @@
   .bev_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "bev_item1 bev_item2"
-                         "bev_item3 bev_item4" 
-                         "bev_item5 bev_item6" !important;
+    grid-template-areas:
+      "bev_item1 bev_item2"
+      "bev_item3 bev_item4"
+      "bev_item5 bev_item6" !important;
   }
   .snacks_container {
     padding: 10px !important;
@@ -215,8 +219,9 @@
   .snack_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "snack_item1 snack_item2" 
-                         "snack_item3 snack_item4" !important;
+    grid-template-areas:
+      "snack_item1 snack_item2"
+      "snack_item3 snack_item4" !important;
     gap: 20px !important;
   }
   .snack_name {
@@ -231,8 +236,9 @@
   .cleaning_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "cleaning_item1 cleaning_item2" 
-                         "cleaning_item3 cleaning_item4" !important;
+    grid-template-areas:
+      "cleaning_item1 cleaning_item2"
+      "cleaning_item3 cleaning_item4" !important;
     gap: 20px !important;
   }
   .cleaning_name {
@@ -247,9 +253,10 @@
   .beauty_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "beauty_item1 beauty_item2" 
-                         "beauty_item3 beauty_item4" 
-                         "beauty_item5 beauty_item6" !important;
+    grid-template-areas:
+      "beauty_item1 beauty_item2"
+      "beauty_item3 beauty_item4"
+      "beauty_item5 beauty_item6" !important;
   }
   .kitchen_container {
     padding: 10px !important;
@@ -257,9 +264,10 @@
   .kitchen_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "kitchen_item1 kitchen_item2" 
-                         "kitchen_item3 kitchen_item4" 
-                         "kitchen_item5 kitchen_item6" !important;
+    grid-template-areas:
+      "kitchen_item1 kitchen_item2"
+      "kitchen_item3 kitchen_item4"
+      "kitchen_item5 kitchen_item6" !important;
   }
   .p_container {
     padding: 20px !important;
@@ -268,14 +276,14 @@
     display: none !important;
     background-color: white !important   ;
   }
-  .mobile_footer{
+  .mobile_footer {
     width: 100% !important;
     padding: 0 !important;
     height: 240px;
     display: flex !important;
     flex-direction: column;
   }
-  .mob_foot_heading{
+  .mob_foot_heading {
     width: 100%;
     height: 50px;
     display: flex;
@@ -284,13 +292,13 @@
     background-color: #f0f0f0;
     color: #323031;
   }
-  .mobile_play_apple_store{
+  .mobile_play_apple_store {
     height: 125px !important;
     width: 100%;
     padding: 15px;
     background-color: #61586385;
   }
-  .mobile_play_apple_store>p{ 
+  .mobile_play_apple_store > p {
     width: 100% !important;
     height: 30px;
     font-size: 16px;
@@ -299,7 +307,7 @@
     justify-content: center;
     align-items: center;
   }
-  .mobile_play_apple_store_icon{
+  .mobile_play_apple_store_icon {
     width: 100%;
     height: 75px;
     display: flex;
@@ -307,13 +315,13 @@
     align-items: center;
     padding-right: 15px;
   }
-  .mobile_playstore_icon{
+  .mobile_playstore_icon {
     height: 73px;
   }
-  .mobile_applestore_icon{
+  .mobile_applestore_icon {
     height: 50px;
   }
-  .mob_foot_img_container{
+  .mob_foot_img_container {
     width: 100%;
     height: 60px;
     background-color: #fff;
@@ -326,28 +334,26 @@
     box-shadow: 0 -1px 2px 1px #faf7f7;
     z-index: 1;
   }
-  figure>a>img{
+  figure > a > img {
     height: 30px;
     cursor: pointer;
   }
-  figcaption{
+  figcaption {
     color: black;
     text-align: center;
     font-size: 13px;
     cursor: pointer;
   }
-  .catgo{
+  .catgo {
     padding-left: 16px;
   }
 }
 /* 480px Responsive part end here. */
 
-
 /* 481px to 768px Responsive part start from here. */
 
-
-@media (min-width: 481px) and (max-width: 768px){
-  .header{
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
     display: none !important;
   }
   .mobile_header {
@@ -453,23 +459,24 @@
     grid-template-columns: none !important;
     grid-template-rows: repeat(2, 1fr) !important;
     grid-template-areas:
-      "item1 item2" 
+      "item1 item2"
       "item3 item4" !important;
   }
   .div2 > img {
     width: 250px !important;
     height: 185px;
   }
-  .top_offer_container { 
+  .top_offer_container {
     padding: 10px !important;
   }
   .offer_content {
     width: 100%;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(2,1fr) !important;
-    grid-template-areas: "item1 item2"
-                         "item3 item4" !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4" !important;
     gap: 15px !important;
   }
   .fruits_vegitables_container {
@@ -481,8 +488,9 @@
   .fruits_vegitables_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "fv_item1 fv_item2" 
-                         "fv_item3 fv_item4" !important;
+    grid-template-areas:
+      "fv_item1 fv_item2"
+      "fv_item3 fv_item4" !important;
   }
   .daily_staples_container {
     padding: 10px !important;
@@ -494,8 +502,9 @@
   .staples_item_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
-    grid-template-areas: "ds_item1 ds_item2 ds_item4"
-                         "ds_item3 ds_item5 ds_item6" !important;
+    grid-template-areas:
+      "ds_item1 ds_item2 ds_item4"
+      "ds_item3 ds_item5 ds_item6" !important;
   }
   .beverage_container {
     padding: 10px !important;
@@ -503,8 +512,9 @@
   .bev_content {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
-    grid-template-areas: "bev_item1 bev_item2 bev_item3"
-                         "bev_item4 bev_item5 bev_item6" !important;
+    grid-template-areas:
+      "bev_item1 bev_item2 bev_item3"
+      "bev_item4 bev_item5 bev_item6" !important;
   }
   .snacks_container {
     padding: 10px !important;
@@ -512,8 +522,9 @@
   .snack_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "snack_item1 snack_item2" 
-                         "snack_item3 snack_item4" !important;
+    grid-template-areas:
+      "snack_item1 snack_item2"
+      "snack_item3 snack_item4" !important;
     gap: 20px !important;
   }
   .snack_name {
@@ -528,8 +539,9 @@
   .cleaning_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: "cleaning_item1 cleaning_item2" 
-                         "cleaning_item3 cleaning_item4" !important;
+    grid-template-areas:
+      "cleaning_item1 cleaning_item2"
+      "cleaning_item3 cleaning_item4" !important;
     gap: 20px !important;
   }
   .cleaning_name {
@@ -544,8 +556,9 @@
   .beauty_content {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
-    grid-template-areas: "beauty_item1 beauty_item2 beauty_item3" 
-                         "beauty_item4 beauty_item5 beauty_item6" !important;
+    grid-template-areas:
+      "beauty_item1 beauty_item2 beauty_item3"
+      "beauty_item4 beauty_item5 beauty_item6" !important;
   }
   .kitchen_container {
     padding: 10px !important;
@@ -553,8 +566,9 @@
   .kitchen_content {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
-    grid-template-areas: "kitchen_item1 kitchen_item2 kitchen_item3" 
-                         "kitchen_item4 kitchen_item5 kitchen_item6" !important;
+    grid-template-areas:
+      "kitchen_item1 kitchen_item2 kitchen_item3"
+      "kitchen_item4 kitchen_item5 kitchen_item6" !important;
   }
   .p_container {
     padding: 20px !important;
@@ -563,14 +577,14 @@
     display: none !important;
     background-color: white !important   ;
   }
-  .mobile_footer{
+  .mobile_footer {
     width: 100% !important;
     padding: 0 !important;
     height: 240px;
     display: flex !important;
     flex-direction: column;
   }
-  .mob_foot_heading{
+  .mob_foot_heading {
     width: 100%;
     height: 50px;
     display: flex;
@@ -579,13 +593,13 @@
     background-color: #f0f0f0;
     color: #323031;
   }
-  .mobile_play_apple_store{
+  .mobile_play_apple_store {
     height: 125px !important;
     width: 100%;
     padding: 15px;
     background-color: #61586385;
   }
-  .mobile_play_apple_store>p{ 
+  .mobile_play_apple_store > p {
     width: 100% !important;
     height: 30px;
     font-size: 16px;
@@ -594,7 +608,7 @@
     justify-content: center;
     align-items: center;
   }
-  .mobile_play_apple_store_icon{
+  .mobile_play_apple_store_icon {
     width: 100%;
     height: 75px;
     display: flex;
@@ -602,13 +616,13 @@
     align-items: center;
     padding-right: 15px;
   }
-  .mobile_playstore_icon{
+  .mobile_playstore_icon {
     height: 73px;
   }
-  .mobile_applestore_icon{
+  .mobile_applestore_icon {
     height: 50px;
   }
-  .mob_foot_img_container{
+  .mob_foot_img_container {
     width: 100%;
     height: 60px;
     background-color: #fff;
@@ -621,29 +635,27 @@
     box-shadow: 0 -1px 2px 1px #faf7f7;
     z-index: 1;
   }
-  figure>a>img{
+  figure > a > img {
     height: 30px;
     cursor: pointer;
   }
-  figcaption{
+  figcaption {
     color: black;
     text-align: center;
     font-size: 13px;
     cursor: pointer;
   }
-  .catgo{
+  .catgo {
     padding-left: 16px;
   }
-
 }
 
 /* 481px to 768px Responsive part start from here. */
 
-
-@media (min-width: 769px) and (max-width: 1024px){
-  .header{
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
     width: 100vw;
-    padding: 10PX 0 !important;
+    padding: 10px 0 !important;
   }
   .up_nav {
     padding: 8px 10px !important;
@@ -670,7 +682,7 @@
     width: 5vw !important;
   }
   .lower_nav {
-    padding: 10px !important; 
+    padding: 0 10px !important;
   }
   .category {
     width: 18vw !important;
@@ -684,7 +696,7 @@
     gap: 35px !important;
   }
   .basket_offer {
-    width: 20vw !important; 
+    width: 20vw !important;
     gap: 10px;
   }
   .smart_cart {
@@ -697,7 +709,7 @@
   }
   .menu_container {
     width: 100% !important;
-    margin-top: 160px!important;
+    margin-top: 160px !important;
     padding: 0px 10px !important;
     display: grid;
     grid-template-columns: repeat(5, 1fr) !important;
@@ -714,7 +726,7 @@
   .offer_content {
     width: 100% !important;
     display: grid;
-    grid-template-columns: repeat(4,1fr) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
     grid-template-areas: "item1 item2 item3 item4" !important;
     gap: 15px !important;
   }
@@ -727,7 +739,7 @@
     grid-template-areas: "fv_item1 fv_item2 fv_item3 fv_item4" !important;
   }
   .daily_staples_container {
-    padding: 10px !important; 
+    padding: 10px !important;
   }
   .staples_item_container {
     display: grid;
@@ -790,9 +802,28 @@
     padding-right: 0px !important;
   }
 }
-  
-/* 768px to 1024px responsive part end here. */
 
+/* 768px to 1025px responsive part end here. */
+
+/* 1025px to 1600px responsive part start form here. */
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .nonveg {
+    padding: 10px 24px !important;
+  }
+  .buy_save {
+    padding: 10px 15px !important;
+  }
+  .deals {
+    padding: 10px 15px !important;
+  }
+  .store {
+    padding: 19px 10px !important;
+  }
+  
+}
+
+/* 1024px to 1600px responsive part end here. */
 
 /* header part start from here. */
 
@@ -982,18 +1013,18 @@
 .food_container > a:hover {
   color: rgb(204, 0, 0);
 }
-.food_container a::before{
+.food_container a::before {
   content: "";
   position: absolute;
   left: 0%;
   bottom: -1px;
-  background-image: linear-gradient(white,red);
+  background-image: linear-gradient(white, red);
   height: 7px;
   width: 0%;
   transition: width 0.5s linear;
   opacity: 0.2;
 }
-.food_container a:hover::before{
+.food_container a:hover::before {
   width: 100%;
 }
 
@@ -1043,7 +1074,6 @@
 /* lower_nav end here */
 
 /* header part end here. */
-
 
 /* Main section start from here. */
 
@@ -1196,6 +1226,7 @@
 }
 
 .item_container_1 {
+  max-height: 100%;
   padding: 10px;
   border-radius: 10px;
   grid-area: item1;
@@ -2431,7 +2462,7 @@ hr {
   justify-content: center;
   align-items: center;
 }
-.mobile_footer{
+.mobile_footer {
   display: none;
 }
 /* footer part end here. */
